@@ -1,0 +1,26 @@
+import React from 'react';
+import {FlexWrapper} from "../../../components/Wrapper";
+import {SectionName} from "../../../components/SectionName";
+import {Project} from "./Project/project";
+import styled from "styled-components";
+import MapPic from "../../../../src/assets/img/thumbnail-1.webp"
+import RadioPic from "../../../../src/assets/img/thumbnail-2.webp"
+import CarPic from "../../../../src/assets/img/thumbnail-3.webp"
+
+export const Projects = () => {
+    return (
+        <ProjectsStyled>
+             <SectionName title={'Featured projects:'}></SectionName>
+            <p>I have worked on many projects over the course of being a Web Developer, here are a few of my live, real-world projects</p>
+            <FlexWrapper justify="space-between">
+                <Project srcIMG={MapPic} title='TWINDER' text='A live Geolocation app for finding tweets and twitter users around you.'></Project>
+                <Project srcIMG={RadioPic} title='LIVENTS' text='A video streaming app with live Geolocation, for streaming events.'></Project>
+                <Project srcIMG={CarPic} title='MOOVE' text='Mobile app for booking instant pickup & dropoff accross major cities.'></Project>
+            </FlexWrapper>
+        </ProjectsStyled>
+    );
+};
+
+const ProjectsStyled = styled.section`
+`
+

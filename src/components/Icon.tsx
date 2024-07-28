@@ -8,7 +8,7 @@ return (
 )}
 
 type IconProps = {
-    idSvg: string;
+    idSvg?: string;
     width?: string ;
     height?: string ;
     viewBox?: string ;
