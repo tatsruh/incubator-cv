@@ -14,7 +14,7 @@ export const ButtonMain = (props:ButtonMainProps) => {
 };
 
 const ButtonMainStyled = styled.button   `
-    width: 200px;
+    max-width: 200px;
     height: 50px;
     background-color: ${props => props.color || CvTheme.colors.accent}
 `

@@ -4,20 +4,33 @@ import {SectionName} from "../../components/SectionName";
 import Menu from "../../components/menu";
 import {FlexWrapper} from "../../components/Wrapper";
 import {CvTheme} from "../../styles/Theme";
+import {Container} from '../../components/Container';
 
 const Header = () => {
     return (
-        <StyledHeader as={FlexWrapper} justify={"space-between"}>
-          <SectionName title={"Tatiana Rukhavets"}/>
-            <Menu menuArray={headerArray}/>
+        <StyledHeader>
+            <Container>
+                <FlexWrapper justify="space-between" align="center">
+                    <SectionName title="Tatiana Rukhavets" fontsize = '28px' />
+                    <Menu menuArray={headerArray}/>
+                </FlexWrapper>
+            </Container>
+
         </StyledHeader>
     );
 };
 
-      const StyledHeader = styled.header `
-  background-color: ${CvTheme.colors.darkBackground};
-          
-      `
-const headerArray = ['Home','About me','Projects','Contact']
+const StyledHeader = styled.header`
+    background-color: ${CvTheme.colors.darkBackground};
+   height: 80px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    
+`
+
+const headerArray = ['Home', 'About me', 'Projects', 'Contact']
 
 export default Header;

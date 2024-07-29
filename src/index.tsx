@@ -5,12 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {ThemeProvider} from "styled-components";
 import {CvTheme} from "./styles/Theme";
+import { GlobalStyles } from './styles/GlobalStyles';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <ThemeProvider theme={CvTheme}>
+      <GlobalStyles/>
     <App />
   </ThemeProvider>
 );

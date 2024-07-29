@@ -1,24 +1,37 @@
 import styled from "styled-components";
 
 import React from 'react';
+import { CvTheme } from "../styles/Theme";
 
 const Menu = (props: {menuArray: Array<string>}) => {
     return (
        <MenuStyled>
-           <ul>
+           <UlStyled>
                {props.menuArray.map((item, index) => {
-                   return <li key={index}><a href="">{item}</a></li>
+                   return <LiStyled key={index}><a href="">{item}</a></LiStyled>
                })}
 
-           </ul>
+           </UlStyled>
        </MenuStyled>
     );
 };
 
 export default Menu;
 const MenuStyled = styled.nav `
-   ul {
-       display: flex;
-       gap: 50px;
-   }
+
+`
+const UlStyled = styled.ul `
+    display: flex;
+    gap:50px
+
+`
+const LiStyled = styled.li `
+a {
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    &:hover {
+        color: ${CvTheme.colors.accent}
+    }
+}
 `
