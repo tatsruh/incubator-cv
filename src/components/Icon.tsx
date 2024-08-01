@@ -1,3 +1,4 @@
+import styled from 'styled-components';
 import sprite from '../assets/img/sprite.svg'
 
 export const Icon = (props:IconProps) => {
@@ -13,3 +14,4 @@ type IconProps = {
     height?: string ;
     viewBox?: string ;
 }
+

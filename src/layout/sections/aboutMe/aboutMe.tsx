@@ -20,11 +20,10 @@ export const AboutMe = () => {
               <NumberText>Years of experience. Specialised in building apps, while ensuring a seamless
                   web experience for end users.</NumberText>
           </FlexWrapper>
-          <FlexWrapper justify='center'>
+          <FlexWrapper justify='center' wrap="wrap">
               <AboutMeComponent idSVG="ruler" text="UI & UX
 DESIGNING"/>
-              <AboutMeComponent idSVG="ruler" text="UI & UX
-DESIGNING" color="grey"/>
+              <AboutMeComponent idSVG="code" text="WEB DEVELOPMENT" color="grey"/>
               <AboutMeComponent idSVG="android_svg" text="MOBILE
 DEVELOPMENT" color="grey"/>
               <AboutMeComponent idSVG="python" text="WEB SCRAPING
@@ -36,13 +35,31 @@ WITH PYTHON" color="grey"/>
 };
 
 const AboutMeStyled = styled.section`
+    padding-bottom: 80px;
+    padding-top: 50px;
+
+    h2 {
+        padding-bottom: 10px;
+       
+    }
     
+  
+  
 `
+
 const Text = styled.p`
+    font-size: 18px;
+    color: white;
+    line-height: 2;
 `
 const Number = styled.span`
-    font-size: 10rem;
+    font-size: 96px;
+    font-weight: 600;
     color: ${CvTheme.colors.accent};
 `
 const NumberText = styled.p`
+    font-size: 24px;
+    color: white;
+    line-height: 1.5;
+    margin-left: 10px;
 `

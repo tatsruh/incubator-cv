@@ -24,7 +24,7 @@ export const Footer = () => {
                 <FlexWrapper direction="column">
                     <ContactText>Contact me, let’s make magic together</ContactText>
                     <Form></Form>
-                    <ButtonMain buttontext="Send"></ButtonMain>
+                    <ButtonMain width="160px" buttontext="Send"></ButtonMain>
                 </FlexWrapper>
             </Container>
 

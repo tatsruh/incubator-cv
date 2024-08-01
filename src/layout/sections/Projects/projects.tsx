@@ -13,8 +13,8 @@ export const Projects = () => {
         <ProjectsStyled>
           <Container>
               <SectionName title={'Featured projects:'}></SectionName>
-              <p>I have worked on many projects over the course of being a Web Developer, here are a few of my live, real-world projects</p>
-              <FlexWrapper justify="space-between">
+              <ProjectText>I have worked on many projects over the course of being a Web Developer, here are a few of my live, real-world projects</ProjectText>
+              <FlexWrapper justify="space-between" wrap="wrap">
                   <Project srcIMG={MapPic} title='TWINDER' text='A live Geolocation app for finding tweets and twitter users around you.'></Project>
                   <Project srcIMG={RadioPic} title='LIVENTS' text='A video streaming app with live Geolocation, for streaming events.'></Project>
                   <Project srcIMG={CarPic} title='MOOVE' text='Mobile app for booking instant pickup & dropoff accross major cities.'></Project>
@@ -25,5 +25,14 @@ export const Projects = () => {
 };
 
 const ProjectsStyled = styled.section`
+${FlexWrapper} {
+    gap: 17px;
+    
+}
+    `
+const ProjectText = styled.p `
+    font-size: 18px;
+    color: white;
+    margin-top: 16px;
+    margin-bottom: 36px;
 `
-

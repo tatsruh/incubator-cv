@@ -10,7 +10,7 @@ export const Skills = () => {
     return (
         <SkillsStyled>
             <Container>
-                <SectionName title={"The services i offer:"} textalign={'center'}/>
+                <SectionName title={"The services i offer:"}/>
                 <FlexWrapper wrap={'wrap'}>
                     <Skillbox idSVG={"ruler"} title={"UI & UX DESIGNING"} colorTitle={"white"}
                               description={'I design beautiful web iterfaces with Figma and Adove XD'}/>
@@ -37,4 +37,11 @@ export const Skills = () => {
 
 const SkillsStyled = styled.section`
     background-color: ${CvTheme.colors.background};
+    & > div > div {
+       gap: 20px
+    }
+    h2 {
+        margin-bottom: 30px;
+    }
+    padding-bottom: 80px;
 `
