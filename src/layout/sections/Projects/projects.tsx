@@ -29,6 +29,7 @@ ${FlexWrapper} {
     gap: 17px;
     
 }
+    padding-bottom: 80px;
     `
 const ProjectText = styled.p `
     font-size: 18px;

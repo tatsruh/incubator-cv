@@ -32,12 +32,22 @@ background-color: #31313F;
     padding-top: 16px;
     padding-bottom: 23px;
     border-radius: 8px;
+    &:hover {
+        cursor: pointer;
+        h3 {
+            color: ${CvTheme.colors.hover};
+        };
+        img {
+            border-color: ${CvTheme.colors.hover};
+        }
+    }
     
     
 `
 
 const Image = styled.img`
-    
+    border: 1px solid transparent;
+    border-radius: 8px;
 `
 const Title = styled.h3`
     color: ${CvTheme.colors.accent};

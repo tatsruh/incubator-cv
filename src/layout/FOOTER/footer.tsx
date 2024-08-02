@@ -6,42 +6,59 @@ import {Icon} from "../../components/Icon";
 import {Form} from "./form";
 import ButtonMain from "../../components/ButtonMain";
 import { Container } from '../../components/Container';
+import { CvTheme } from '../../styles/Theme';
 
 export const Footer = () => {
     return (
         <FooterStyled>
             <Container>
-                <FlexWrapper direction="column" justify="space-between">
+
+            <FlexWrapper justify="space-between">
+                <FlexWrapper direction="column" justify="space-between" align="start">
                     <SectionName title="Connect with me:"></SectionName>
-                    <p>Satisfied with me? Please contact me</p>
+                    <Text>Satisfied with me? Please contact me</Text>
                     <SocialUl>
-                        <SocialLi> <Icon idSvg="instagram"/> </SocialLi>
-                        <SocialLi> <Icon idSvg="facebook"/></SocialLi>
-                        <SocialLi><Icon idSvg="dribble"/></SocialLi>
-                        <SocialLi> <Icon idSvg="sms"/></SocialLi>
+                        <SocialLi> <Link href='#'> <Icon idSvg="instagram" width="62px"/> </Link> </SocialLi>
+                        <SocialLi><Link  href='#'> <Icon idSvg="facebook" width="62px"/></Link> </SocialLi>
+                        <SocialLi><Link  href='#'><Icon idSvg="dribble" width="62px"/></Link> </SocialLi>
+                        <SocialLi><Link  href='#'> <Icon idSvg="sms" width="62px"/></Link> </SocialLi>
                     </SocialUl>
                 </FlexWrapper>
-                <FlexWrapper direction="column">
+                <FlexWrapper direction="column" justify="space-between">
                     <ContactText>Contact me, let’s make magic together</ContactText>
                     <Form></Form>
                     <ButtonMain width="160px" buttontext="Send"></ButtonMain>
                 </FlexWrapper>
+            </FlexWrapper>
             </Container>
 
         </FooterStyled>
     );
 };
 
-const FooterStyled = styled.footer `
- 
-   
-    background-color: bisque;
 
-`
 const SocialUl = styled.ul `
     display: flex;
 `
 const SocialLi = styled.li `
 `
 const ContactText = styled.p `
+    color: white;
+    font-size: 24px;
+    margin-bottom: 25px;
+`
+const Text = styled.p `
+    color: white;
+    font-size: 18px;
+    margin: 25px 0;
+`
+const Link = styled.a `
+`
+const FooterStyled = styled.footer `
+    
+    background-color: ${CvTheme.colors.background};
+    button {
+        margin-top: 25px;
+    }
+padding-bottom: 80px;
 `
