@@ -37,13 +37,14 @@ const Main = () => {
 
                 </FlexWrapper>
             </Container>
-           <BackgroundBar/>
+
         </MainStyled>
     );
 };
 
-const MainStyled = styled.div`
+const MainStyled = styled.main`
     background-color: ${CvTheme.colors.background};
+height: 80vh;
     button {
         margin-top: 30px;
         margin-bottom: 50px;
@@ -51,13 +52,32 @@ const MainStyled = styled.div`
     button + button {
         margin-left: 35px;
     }
-   
+    ${FlexWrapper} {
+        height: unset;
+    }
+
 `
 const Name = styled.h2`
     color: #F5F5F5;
-    opacity: 30%;
+ 
     font-size: 52px;
     font-weight: 600;
+    position: relative;
+    z-index: 0;
+    margin-bottom: 10px;
+&::before {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 20px;
+    background-color: ${CvTheme.colors.hover};
+    position: absolute;
+    bottom: 10px;
+    z-index: -1;
+    opacity: 100%;
+    
+    
+}    
 `
 const MainTag = styled.h1`
     font-size: 18px;

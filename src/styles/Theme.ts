@@ -18,6 +18,11 @@ export const CvTheme = {
             "font-weight": '600',
             "font-style": 'normal'
         }
+    },
+
+    media: {
+        tablet: "screen and (max-width: 950px)",
+        mobile: "screen and (max-width: 576px)",
     }
 
 }

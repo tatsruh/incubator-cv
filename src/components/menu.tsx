@@ -21,7 +21,11 @@ const Menu = (props: {menuArray: Array<string>}) => {
 };
 
 export default Menu;
+
 const MenuStyled = styled.nav `
+    @media ${CvTheme.media.tablet} {
+        display: none;
+    }
 
 `
 const UlStyled = styled.ul `

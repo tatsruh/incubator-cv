@@ -22,6 +22,7 @@ const SectionNameStyled = styled.h2 <SectionNameProps> `
     font-size: ${props => props.fontsize || '32px'};
     font-weight: 600;
     -webkit-text-stroke: 1px black;
+ line-height: 48px;
     
 
 `

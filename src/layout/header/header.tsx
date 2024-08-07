@@ -5,6 +5,7 @@ import Menu from "../../components/menu";
 import {FlexWrapper} from "../../components/Wrapper";
 import {CvTheme} from "../../styles/Theme";
 import {Container} from '../../components/Container';
+import BurgerMenu from "../../components/burgerMenu";
 
 const Header = () => {
     return (
@@ -13,6 +14,8 @@ const Header = () => {
                 <FlexWrapper justify="space-between" align="center">
                     <SectionName title="Tatiana Rukhavets" fontsize = '28px' />
                     <Menu menuArray={headerArray}/>
+                    <BurgerMenu menuArray={headerArray}/>
+
                 </FlexWrapper>
             </Container>
 
