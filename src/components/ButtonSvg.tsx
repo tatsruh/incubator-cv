@@ -7,17 +7,18 @@ type ButtonSvgProps = {
     idSvg?: string;
     color?: string;
     width: string;
+    href?: string
 }
  const ButtonSvg = (props:ButtonSvgProps) => {
     return (
         <ButtonSvgStyled color={props.color} width={props.width}>
-            <ButtonText>{props.buttontext}</ButtonText>
+            <ButtonText href={props.href}>{props.buttontext}</ButtonText>
             <Icon width="20px" height="20px" viewBox="20px" idSvg={props.idSvg}/>
 
         </ButtonSvgStyled>
     );
 };
-export const ButtonText = styled.span`
+export const ButtonText = styled.a`
     font-size: 16px;
     color: white;
     font-weight: 600;

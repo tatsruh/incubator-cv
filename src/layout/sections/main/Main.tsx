@@ -30,8 +30,8 @@ const Main = () => {
                                 }}
                             /></MainTag>
                         <FlexWrapper wrap={"wrap"}>
-                            <ButtonSvg width="160px" idSvg={'user'} buttontext={"About me"}/>
-                            <ButtonSvg width="160px" color={CvTheme.colors.background} idSvg={'eye'} buttontext={"Projects"}/>
+                            <ButtonSvg width="160px" idSvg={'user'} buttontext={"Contact me"} href="#contact"/>
+                            <ButtonSvg width="160px" color={CvTheme.colors.background} idSvg={'eye'} buttontext={"Projects"} href="#projects"/>
 
 
                         </FlexWrapper>
