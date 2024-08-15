@@ -4,6 +4,11 @@ import { CvTheme } from "./Theme";
 export const GlobalStyles = createGlobalStyle `
     html {
         scroll-behavior: smooth;
+        
+    }
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
     }
 
     body {
