@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {CvTheme} from "../styles/Theme";
 type FlexWrapperProps = {
     direction?: "column" | "row"
     justify?: string
@@ -13,4 +14,9 @@ export const FlexWrapper = styled.div <FlexWrapperProps> `
     align-items: ${props => props.align || "center"};
     flex-wrap: ${props => props.wrap || "nowrap"};
     height: 100%;
+    @media ${CvTheme.media.mobile} {
+       justify-content: center;
+        align-items: center;
+
+    }
     `

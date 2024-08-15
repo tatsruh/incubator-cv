@@ -2,16 +2,39 @@ import styled from "styled-components";
 
 import React from 'react';
 import { CvTheme } from "../styles/Theme";
+const items = [
+    {
+        title: "Home",
+        href: "home"
+    },
+    {
+        title: "About Me",
+        href: "about"
+    },
+    {
+        title: "Skills",
+        href: "skills"
+    },
+    {
+        title: "Projects",
+        href: "projects"
+    },
+    {
+        title: "Contact",
+        href: "contact"
+    },
 
-const Menu = (props: {menuArray: Array<string>}) => {
+]
+
+const Menu = () => {
     return (
        <MenuStyled>
            <UlStyled>
-               {props.menuArray.map((item, index) => {
-                   return <LiStyled key={index}><a href="">
-                       {item}
-                       <Mask> <span> {item}</span> </Mask>
-                       <Mask> <span> {item}</span> </Mask>
+               {items.map((item, index) => {
+                   return <LiStyled key={index}><a href={`#${item.href}`} >
+                       {item.title}
+                       <Mask> <span> {item.title}</span> </Mask>
+                       <Mask> <span> {item.title}</span> </Mask>
                    </a></LiStyled>
                })}
 

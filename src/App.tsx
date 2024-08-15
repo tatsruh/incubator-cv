@@ -10,11 +10,13 @@ import {Projects} from "./layout/sections/Projects/projects";
 import {AboutMe} from "./layout/sections/aboutMe/aboutMe";
 import {Footer} from "./layout/FOOTER/footer";
 import React from "react";
+import {Particle} from "./components/particle";
 
 
 function App() {
     return (
         <div className="App">
+            <Particle/>
             <Header/>
             <Main/>
             <BackgroundBar/>

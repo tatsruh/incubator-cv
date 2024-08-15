@@ -10,10 +10,10 @@ import { CvTheme } from '../../styles/Theme';
 
 export const Footer = () => {
     return (
-        <FooterStyled>
+        <FooterStyled id={'contact'}>
             <Container>
 
-            <FlexWrapper justify="space-between">
+            <FlexWrapper justify="space-between" wrap={'wrap'}>
                 <FlexWrapper direction="column" justify="space-between" align="start">
                     <SectionName title="Connect with me:"></SectionName>
                     <Text>Satisfied with me? Please contact me</Text>

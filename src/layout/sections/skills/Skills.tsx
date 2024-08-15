@@ -8,7 +8,7 @@ import { Container } from '../../../components/Container';
 
 export const Skills = () => {
     return (
-        <SkillsStyled>
+        <SkillsStyled id={'skills'}>
             <Container>
                 <SectionName title={"The services i offer:"}/>
                 <FlexWrapper wrap={'wrap'}>
@@ -36,6 +36,7 @@ export const Skills = () => {
 };
 
 const SkillsStyled = styled.section`
+    position: relative;
     background-color: ${CvTheme.colors.background};
     & > div > div {
        gap: 20px

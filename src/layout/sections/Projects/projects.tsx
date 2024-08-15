@@ -10,7 +10,7 @@ import { Container } from '../../../components/Container';
 
 export const Projects = () => {
     return (
-        <ProjectsStyled>
+        <ProjectsStyled id={'projects'}>
           <Container>
               <SectionName title={'Featured projects:'}></SectionName>
               <ProjectText>I have worked on many projects over the course of being a Web Developer, here are a few of my live, real-world projects</ProjectText>
@@ -25,6 +25,7 @@ export const Projects = () => {
 };
 
 const ProjectsStyled = styled.section`
+    position: relative;
 ${FlexWrapper} {
     gap: 17px;
     

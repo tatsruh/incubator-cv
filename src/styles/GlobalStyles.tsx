@@ -2,6 +2,10 @@ import { createGlobalStyle } from "styled-components";
 import { CvTheme } from "./Theme";
 
 export const GlobalStyles = createGlobalStyle `
+    html {
+        scroll-behavior: smooth;
+    }
+
     body {
         margin: 0;
         font-family: "Poppins", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,6 +15,7 @@ export const GlobalStyles = createGlobalStyle `
         font-style: normal;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        scroll-behavior: smooth;
     }
     *,
     *::before,
@@ -22,11 +27,15 @@ export const GlobalStyles = createGlobalStyle `
     
     a {
         text-decoration: none;
+        scroll-behavior: smooth;
     }
     
     ul {
         list-style: none;
         
+    }
+    section {
+        padding-top: 100px;
     }
     
     button {

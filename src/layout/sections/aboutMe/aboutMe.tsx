@@ -8,7 +8,7 @@ import { Container } from '../../../components/Container';
 
 export const AboutMe = () => {
     return (
-        <AboutMeStyled>
+        <AboutMeStyled id={'about'}>
       <Container>
           <SectionName title="About me:"></SectionName>
           <Text>Hi, my name is Jayjay Dinero Dinero, i am a Fullstack web developer, UI designer, and Mobile
@@ -36,11 +36,18 @@ WITH PYTHON" color="grey"/>
 
 const AboutMeStyled = styled.section`
     padding-bottom: 80px;
-    padding-top: 50px;
+  
+    position: relative;
 
     h2 {
         padding-bottom: 10px;
        
+    }
+    ${Container} {
+        @media ${CvTheme.media.mobile} {
+            gap: 20px;
+
+        }
     }
     
   
@@ -62,4 +69,9 @@ const NumberText = styled.p`
     color: white;
     line-height: 1.5;
     margin-left: 10px;
+    @media ${CvTheme.media.mobile} {
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
 `

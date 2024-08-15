@@ -15,7 +15,9 @@ export const Form = () => {
 const StyledForm = styled.form `
     display: flex;
     flex-direction: column;
-    gap: 16px; 
+    gap: 16px;
+    width: 100%; /* Ширина будет 100% от родителя, но не более 472px */
+    max-width: 500px; /* Максимальная ширина 472px */
     textarea {
         box-sizing: border-box;
         height: 100px;
@@ -31,8 +33,10 @@ const StyledInput = styled.input `
     border-radius: 8px;
     border: none;
     padding-left: 10px;
-    width: 472px; 
-    font-family: "Poppins", sans-serif;
-  height: 62px; 
+    width: 100%; /* Ширина будет 100% от родителя, но не более 472px */
+    max-width: 472px; /* Максимальная ширина 472px */
     
+    font-family: "Poppins", sans-serif;
+  height: 62px;
+   
 `

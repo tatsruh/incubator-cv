@@ -1,22 +1,47 @@
 import styled, {css} from "styled-components";
 
-import React from 'react';
+import React, {useState} from 'react';
 import { CvTheme } from "../styles/Theme";
+const items = [
+    {
+        title: "Home",
+        href: "home"
+    },
+    {
+        title: "About Me",
+        href: "about"
+    },
+    {
+        title: "Skills",
+        href: "skills"
+    },
+    {
+        title: "Projects",
+        href: "projects"
+    },
+    {
+        title: "Contact",
+        href: "contact"
+    },
 
+]
 
-const BurgerMenu = (props: {menuArray: Array<string>}) => {
+const BurgerMenu = () => {
+    const [menuIsOpen, setMenuIsOpen] = useState(false)
+    const onClickBtn = () => { setMenuIsOpen(!menuIsOpen) }
+    const onClickWrapper = () => {setMenuIsOpen(false)}
     return (
         <BurgerMenuStyled >
-            <BurgerButton isOpen={false}>
+            <BurgerButton isOpen={menuIsOpen} onClick={onClickBtn}>
                 <span></span>
             </BurgerButton>
-            <Wrapper isOpen={false}>
+            <Wrapper isOpen={menuIsOpen} onClick={onClickWrapper}>
                 <UlStyled>
-                    {props.menuArray.map((item, index) => {
-                        return <LiStyled key={index}><a href="">
-                            {item}
-                            <Mask> <span> {item}</span> </Mask>
-                            <Mask> <span> {item}</span> </Mask>
+                    {items.map((item, index) => {
+                        return <LiStyled key={index}><a href={`#${item.href}`}>
+                            {item.title}
+                            <Mask> <span> {item.title}</span> </Mask>
+                            <Mask> <span> {item.title}</span> </Mask>
                         </a></LiStyled>
                     })}
 
@@ -31,8 +56,10 @@ export default BurgerMenu;
 
 const BurgerMenuStyled = styled.nav  `
 display: none;
+  
     @media ${CvTheme.media.tablet} {
         display: block;
+        
     }
  
 

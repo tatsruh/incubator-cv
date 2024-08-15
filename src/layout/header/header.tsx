@@ -13,8 +13,8 @@ const Header = () => {
             <Container>
                 <FlexWrapper justify="space-between" align="center">
                     <SectionName title="Tatiana Rukhavets" fontsize = '28px' />
-                    <Menu menuArray={headerArray}/>
-                    <BurgerMenu menuArray={headerArray}/>
+                    <Menu />
+                    <BurgerMenu />
 
                 </FlexWrapper>
             </Container>
@@ -31,9 +31,15 @@ const StyledHeader = styled.header`
     left: 0;
     right: 0;
     z-index: 9999;
+${FlexWrapper} {
+    @media ${CvTheme.media.mobile} {
+      justify-content: start;
+
+    }
+}
     
 `
 
-const headerArray = ['Home', 'About me', 'Projects', 'Contact']
+
 
 export default Header;
