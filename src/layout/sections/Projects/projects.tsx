@@ -5,7 +5,7 @@ import {Project} from "./Project/project";
 import styled from "styled-components";
 import { Container } from '../../../components/Container';
 import ToDoListPic from '../../../assets/img/7590241.png';
-import SneackersPic from '../../../assets/img/white-sneaker-2048px-9320.webp';
+import convent from '../../../assets/img/green5.jpg';
 import ZooPic from '../../../assets/img/Nowa-zyrafa-w-lodzkim-zoo_16.jpg'
 import hotelPic from '../../../assets/img/AdobeStock_9211505-1600x1067.webp';
 
@@ -17,8 +17,8 @@ export const Projects = () => {
               <SectionName title={'Featured projects:'}></SectionName>
               <ProjectText>I have worked on many projects over the course of being a Web Developer, here are a few of my live, real-world projects</ProjectText>
               <FlexWrapper justify="space-between" wrap="wrap">
+                  <Project srcGithub={'https://github.com/tatsruh/convent-project'} src={'https://convent-project-jumo-rbsri9q1t-tatianas-projects-88aea363.vercel.app/'} srcIMG={convent} title='A Fantasy Convent Page' text='Made with React, Redux Toolkit, Motion.dev'></Project>
                   <Project src={"https://tatsruh.github.io/todolist-withReduxOnly/"} srcGithub={"https://github.com/tatsruh/todolist-withReduxOnly"} srcIMG={ToDoListPic} title='To Do List' text='A simple To Do List with React-Redux'></Project>
-                  <Project srcGithub={'https://github.com/tatsruh/sneackers-public'} src={'https://sneackers-public-rmvm.vercel.app/adidas'} srcIMG={SneackersPic} title='Sneackers Shop' text='A small shop using React-Routing v.6.4'></Project>
                   <Project src={'https://zoo-public-7d5f.vercel.app/'} srcGithub={'https://github.com/tatsruh/zoo-public'} srcIMG={ZooPic} title='Zoo Landing Page' text='A landing page using only React'></Project>
                   <Project src={'https://tatsruh.github.io/HotelProject/'} srcGithub={'https://github.com/tatsruh/HotelProject'} srcIMG={hotelPic} title='Hotel Page' text='A university project using only Native JS, HTML and CSS'></Project>
 
