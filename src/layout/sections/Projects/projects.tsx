@@ -17,7 +17,7 @@ export const Projects = () => {
               <SectionName title={'Featured projects:'}></SectionName>
               <ProjectText>I have worked on many projects over the course of being a Web Developer, here are a few of my live, real-world projects</ProjectText>
               <FlexWrapper justify="space-between" wrap="wrap">
-                  <Project srcGithub={'https://github.com/tatsruh/convent-project'} src={'https://convent-project-jumo-rbsri9q1t-tatianas-projects-88aea363.vercel.app/'} srcIMG={convent} title='A Fantasy Convent Page' text='Made with React, Redux Toolkit, Motion.dev'></Project>
+                  <Project srcGithub={'https://github.com/tatsruh/convent-project'} src={'https://convent-project.vercel.app/'} srcIMG={convent} title='A Fantasy Convent Page' text='Made with React, Redux Toolkit, Motion.dev'></Project>
                   <Project src={"https://tatsruh.github.io/todolist-withReduxOnly/"} srcGithub={"https://github.com/tatsruh/todolist-withReduxOnly"} srcIMG={ToDoListPic} title='To Do List' text='A simple To Do List with React-Redux'></Project>
                   <Project src={'https://zoo-public-7d5f.vercel.app/'} srcGithub={'https://github.com/tatsruh/zoo-public'} srcIMG={ZooPic} title='Zoo Landing Page' text='A landing page using only React'></Project>
                   <Project src={'https://tatsruh.github.io/HotelProject/'} srcGithub={'https://github.com/tatsruh/HotelProject'} srcIMG={hotelPic} title='Hotel Page' text='A university project using only Native JS, HTML and CSS'></Project>
