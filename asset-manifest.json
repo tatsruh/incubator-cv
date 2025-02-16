@@ -1,20 +1,19 @@
 {
   "files": {
     "main.css": "/incubator-cv/static/css/main.31d6cfe0.css",
-    "main.js": "/incubator-cv/static/js/main.c4f501fd.js",
+    "main.js": "/incubator-cv/static/js/main.5c6eade7.js",
     "static/js/787.25eaef86.chunk.js": "/incubator-cv/static/js/787.25eaef86.chunk.js",
     "static/media/shanghai 06-2024-4804.webp": "/incubator-cv/static/media/shanghai 06-2024-4804.265533deb40d60810581.webp",
     "static/media/Nowa-zyrafa-w-lodzkim-zoo_16.jpg": "/incubator-cv/static/media/Nowa-zyrafa-w-lodzkim-zoo_16.b680c0c3fb35f5ea8963.jpg",
     "static/media/AdobeStock_9211505-1600x1067.webp": "/incubator-cv/static/media/AdobeStock_9211505-1600x1067.7b2c5a7e35f047f15075.webp",
     "static/media/sprite.svg": "/incubator-cv/static/media/sprite.0f5a502b144c430602be028d80e3b15e.svg",
     "static/media/green5.jpg": "/incubator-cv/static/media/green5.74823c74ab44a1c47a61.jpg",
-    "static/media/7590241.png": "/incubator-cv/static/media/7590241.35334c0fbbe1a09f5c68.png",
     "index.html": "/incubator-cv/index.html",
-    "main.c4f501fd.js.map": "/incubator-cv/static/js/main.c4f501fd.js.map",
+    "main.5c6eade7.js.map": "/incubator-cv/static/js/main.5c6eade7.js.map",
     "787.25eaef86.chunk.js.map": "/incubator-cv/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.c4f501fd.js"
+    "static/js/main.5c6eade7.js"
   ]
 }
