@@ -11,7 +11,7 @@ export const AboutMe = () => {
         <AboutMeStyled id={'about'}>
       <Container>
           <SectionName title="About me:"></SectionName>
-          <Text>Hi, my name is Tatiana, i am a Frontend Web Developper. My stack includes JavaScript, TypeScript,
+          <Text>Hi, my name is Tatiana, i am a Frontend Web Developer. My stack includes JavaScript, TypeScript,
           React, React-Router, Redux, Redux ToolKit, React Hook Form, REST API, Styled Components, Taliwind, Jira, Postman, Unit-Tests, Storybook and other tools</Text>
           <FlexWrapper>
               <Number>3+</Number>
