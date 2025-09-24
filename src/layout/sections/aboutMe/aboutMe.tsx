@@ -15,7 +15,7 @@ export const AboutMe = () => {
           React, React-Router, Redux, Redux ToolKit, React Hook Form, REST API, Styled Components, Taliwind, Jira, Postman, Unit-Tests, Storybook and other tools</Text>
           <FlexWrapper>
               <Number>3+</Number>
-              <NumberText>Year of experience. Specialised in building apps, while ensuring a seamless
+              <NumberText>Years of experience. Specialised in building apps, while ensuring a seamless
                   web experience for end users.</NumberText>
           </FlexWrapper>
           <FlexWrapper justify='center' wrap="wrap">
